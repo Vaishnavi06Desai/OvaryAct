@@ -7,6 +7,8 @@ import { CardsComponent } from './cards/cards.component';
 import { NewsComponent } from './news/news.component';
 import { HowtopageComponent } from './howtopage/howtopage.component';
 import { AppointmentsComponent } from './appointments/appointments.component';
+import { ShopComponent } from './shop/shop.component';
+import { ForumComponent } from './forum/forum.component';
 
 const routes: Routes = [
   {
@@ -36,6 +38,14 @@ const routes: Routes = [
   {
     path: "Appointments",
     component: AppointmentsComponent
+  },
+  {
+    path: "shop",
+    component: ShopComponent
+  },
+  {
+    path: "forum",
+    component: ForumComponent
   }
 ];
 

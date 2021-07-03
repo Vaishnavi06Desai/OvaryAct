@@ -13,6 +13,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NewsComponent } from './news/news.component';
 import { DiseaseComponent } from './disease/disease.component';
 import { CardsComponent } from './cards/cards.component';
+import { ShopComponent } from './shop/shop.component';
+import { CartComponent } from './cart/cart.component';
+import { OrdersComponent } from './orders/orders.component';
+import { ForumComponent } from './forum/forum.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { CardsComponent } from './cards/cards.component';
     NavbarComponent,
     NewsComponent,
     DiseaseComponent,
-    CardsComponent
+    CardsComponent,
+    ShopComponent,
+    CartComponent,
+    OrdersComponent,
+    ForumComponent
   ],
   imports: [
     BrowserModule,
