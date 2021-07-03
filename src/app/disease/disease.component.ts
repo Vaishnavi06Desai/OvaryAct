@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { diseases } from '../JsonObjects/diseases';
+import { diseases } from '../JsonData/diseases';
 
 @Component({
   selector: 'app-disease',

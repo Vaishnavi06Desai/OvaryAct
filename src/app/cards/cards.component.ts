@@ -1,12 +1,11 @@
-import { Component, OnInit, Renderer2, Input} from '@angular/core';
+import { Component,Renderer2, OnInit ,Input} from '@angular/core';
 
 @Component({
-  selector: 'app-component',
-  templateUrl: './component.component.html',
-  styleUrls: ['./component.component.css']
+  selector: 'app-cards',
+  templateUrl: './cards.component.html',
+  styleUrls: ['./cards.component.scss']
 })
-export class ComponentComponent implements OnInit {
-
+export class CardsComponent implements OnInit {
   @Input() type: 1 | 2 | 3 | 4= 1;
   @Input() id: number = 0;
   @Input() News_rating:string="";
@@ -24,18 +23,15 @@ export class ComponentComponent implements OnInit {
   globalListenFunc: Function = () => { };
   globalListenFunc2: Function = () => { };
   globalListenFunc3: Function = () => { };
-
-  card: any;
-  // container: any;
-  //Items
   title: any;
   sneaker: any;
   purchase: any;
   description: any;
   sizes: any;
-
+  card: any;
   constructor(private renderer: Renderer2) {
   }
+
 
 
   ngAfterViewInit(): void{
