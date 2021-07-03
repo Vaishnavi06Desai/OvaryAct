@@ -34,11 +34,11 @@
                 Why is mentrual health and awareness important?
             </div>
             <div class = "info">
-                Although, menstruation is a natural process, it is barely talked about in the society due to it being considered taboo.
-                Million of people go through this process, being completly unaware of what is going on in their body.
-                This can often lead to disorders and diseases, if not managed.
-                Menstruation is still not a gender neutral discussion and not a lot of queer spaces are available to discuss the same.
-                In order to make the world more aware and inclusive, mentrual health and awareness is highly important.
+                Although menstruation is a <span style = "color: rgb(208, 178, 241)">natural process</span>, it is barely talked about in society as it is considered taboo.
+                <span style = "color: rgb(194, 59, 35)">Millions of people</span> go through this process, being completely <span style = "color: rgb(3, 192, 60)">unaware</span> of what is going on in their bodies.
+                This can often lead to <span style = "color: rgb(243, 154, 39)">disorders and diseases</span>, if not managed.
+                Menstruation is still not a <span style = "color: rgb(87, 154, 190)">gender-neutral</span> discussion and not a lot of <span style = "color: rgb(208, 178, 241)">queer spaces</span> are available to discuss the same.
+                To make the world more <span style = "color: rgb(243, 154, 39)">aware and inclusive</span>, menstrual health and awareness are <span style = "color: rgb(151, 110, 215)">highly important.</span>
             </div>
         </div>
         <div class = "whatwedo">
@@ -50,9 +50,9 @@
             </div>
 
             <div class = "spacespace">
-                <div class = "space" *ngFor = "let x of [1, 2, 3, 4, 5, 6]">
-                    <div class = "spaceimg" style = "background-image: url(../../assets/images/images.jpg);"></div>
-                    <div class = "namespace"></div>
+                <div class = "space" *ngFor = "let x of spaces; let i = index">
+                    <div class = "spaceimg"><fa-icon [icon]="icons[i]" [ngStyle] = "{'color': x.color}"></fa-icon></div>
+                    <div class = "namespace">{{x.name}}</div>
                 </div>
             </div>
             

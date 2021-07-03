@@ -9,6 +9,7 @@ import { SigninComponent } from './signin/signin.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AngularFireModule.initializeApp(environment.firebaseConfig, 'OvaryAct'),
     FormsModule,
     ReactiveFormsModule,
+    FontAwesomeModule,
     
   ],
   providers: [],
