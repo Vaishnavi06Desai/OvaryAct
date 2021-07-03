@@ -135,7 +135,7 @@
 
 .spacespace{
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -143,8 +143,31 @@
 }
 
 .space{
-    background-color: grey;
-    height: 40vh;
+    background-color: rgb(233, 233, 233);
+    height: 30vh;
     width: 20vw;
     margin: 2% 5%;
+}
+
+.space:hover{
+    transform: perspective(200px) translateZ(20px);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.spaceimg{
+    width: 100%;
+    height: 80%;
+    // background-color: aqua;
+    font-size: 800%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aqua;
+}
+
+.namespace{
+    font-size: 200%;
+    text-align: center;
 }

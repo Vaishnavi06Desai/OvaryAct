@@ -1,0 +1,50 @@
+.main{
+    width: 100%;
+    height: 6vh;
+    position: fixed;
+    top: 0;
+    // background-color: aqua;
+    z-index: 100;
+    overflow: hidden;
+    color: white;
+    // overflow: auto;
+}
+
+.bg{
+    height: 12vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    // z-index: 101;
+    background-color: aquamarine;
+}
+
+.bg1{
+    position: sticky;
+    top: 0;
+    background-color: aqua;
+    height: 6vh;
+}
+
+.bg2{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 6vh;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    // color: white;
+    font-size: 150%;
+    align-items: center;
+    height: 100%;
+}
+
+.main2{
+    background-color: white;
+}
+.option{
+    // background-color: aquamarine;
+}

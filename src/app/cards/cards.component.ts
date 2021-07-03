@@ -6,7 +6,7 @@ import { Component,Renderer2, OnInit ,Input} from '@angular/core';
   styleUrls: ['./cards.component.scss']
 })
 export class CardsComponent implements OnInit {
-  @Input() type: 1 | 2 | 3 | 4= 1;
+  @Input() type: 1 | 2 | 3 | 4 | 5= 1;
   @Input() id: number = 0;
   @Input() News_rating:string="";
   @Input() News_comments:string="";
@@ -54,8 +54,8 @@ export class CardsComponent implements OnInit {
       // console.log(e.pageX, e.pageY, x, y)
       // let xAxis = (window.innerWidth / 2 - (e.pageX )) / 25;
       // let yAxis = (window.innerHeight / 2 - (e.pageY)) / 25;
-      let xAxis = 25 - (((e.pageX - x) * 50) / this.card.offsetWidth);
-      let yAxis = 25 - (((e.pageY - (window.pageYOffset + y)) * 50) / this.card.offsetHeight);
+      let xAxis = 10 - (((e.pageX - x) * 20) / this.card.offsetWidth);
+      let yAxis = 10 - (((e.pageY - (window.pageYOffset + y)) * 20) / this.card.offsetHeight);
       // console.log(e.pageY - (window.pageYOffset + y))
       // console.log(e.pageY, window.pageYOffset, y)
       this.card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
@@ -72,11 +72,11 @@ export class CardsComponent implements OnInit {
       this.card.style.transition = "none";
       //Popout
       // console.log(this.title);
-      this.title.style.transform = "perspective(700px) translateZ(125px)";
+      this.title.style.transform = "perspective(700px) translateZ(75px)";
       this.sneaker.style.transform = "perspective(700px) translateZ(70px) rotateZ(-45deg) translateY(-50px)";
-      this.description.style.transform = "perspective(700px) translateZ(125px)";
-      this.sizes.style.transform = "perspective(700px) translateZ(100px)";
-      this.purchase.style.transform = "perspective(700px) translateZ(75px)";
+      this.description.style.transform = "perspective(700px) translateZ(75px)";
+      this.sizes.style.transform = "perspective(700px) translateZ(50px)";
+      this.purchase.style.transform = "perspective(700px) translateZ(35px)";
     });
     // this.container?.addEventListener("mouseenter", (e) => {
     //   this.card.style.transition = "none";
