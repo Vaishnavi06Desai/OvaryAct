@@ -46,13 +46,18 @@
   }
   .lstartcontent
   {
-    color: #92b8ff;
+    margin-top: 20%;
+    margin-left:20%;
+    font-family: country;
+    color:#9370dc;
+    font-size: 300%;
+    /* color: #9370dc;
     font-size: 1000%;
     padding-left: 30%;
     padding-top: 5%;
     font-family: country;
     text-align: right;
-    line-height: 1.5;
+    line-height: 1.5; */
   
     /* align-self: right; */
     /* left padding: 20%; */   
@@ -62,7 +67,8 @@
   } */
   .startpic
   {
-    padding-top: 10%;
+    margin-top: 10%;
+    margin-left: 10%;
     /* height:30%; */
   }
 

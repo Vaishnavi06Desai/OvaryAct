@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NewsComponent } from './news/news.component';
 import { DiseaseComponent } from './disease/disease.component';
 import { CardsComponent } from './cards/cards.component';
+import { NgosComponent } from './ngos/ngos.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CardsComponent } from './cards/cards.component';
     NavbarComponent,
     NewsComponent,
     DiseaseComponent,
-    CardsComponent
+    CardsComponent,
+    NgosComponent
   ],
   imports: [
     BrowserModule,
