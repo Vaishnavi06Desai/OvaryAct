@@ -1,11 +1,12 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SigninComponent } from './signin/signin.component';
 import { DiseaseComponent } from './disease/disease.component';
 import { CardsComponent } from './cards/cards.component';
 import { NewsComponent } from './news/news.component';
-
+import { MapsComponent } from './maps/maps.component';
+import { ArtComponent } from './art/art.component';
 const routes: Routes = [
   {
     path: "signin",
@@ -26,6 +27,14 @@ const routes: Routes = [
   {
     path: "cards",
     component: CardsComponent
+  },
+  {
+    path:"map",
+    component: MapsComponent
+  },
+  {
+    path:"art",
+    component: ArtComponent
   }
 ];
 
