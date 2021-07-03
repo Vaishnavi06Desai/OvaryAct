@@ -212,4 +212,369 @@
   }
 
 
-  
+  .card-51{
+
+    $off_white:   #F8FAFF;
+    $bright_pink: #F4157E;
+    $dull_pink:   #CD106E;
+    $white: #fff;
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        background: #12c2e9; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+            to right,
+            #f64f59,
+            #c471ed,
+            #12c2e9
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+            to right,
+            #f64f59,
+            #c471ed,
+            #12c2e9
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+        min-height: 100%;
+        font-family: "Open sans", sans-serif;
+    }
+    
+    /*--------------------
+    container
+    --------------------*/
+    .wrap {
+        margin: 150px auto 30px;
+        position: relative;
+        width: 460px;
+        background: $white;
+        border-radius: 15px;
+        padding: 272px 45px 30px;
+        box-shadow: 0 10px 40px hsla(0, 0, 0, 0.1);
+    }
+    
+    /*--------------------
+    confirmation
+    --------------------*/
+    .confirmation {
+        position: absolute;
+        top: 96px;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: opacity 300ms ease 300ms;
+        &.visible {
+            opacity: 1;
+        }
+    }
+    
+    .all-good {
+        display: block;
+        margin: 40px auto 0;
+        width: 60px;
+    }
+    .apple-logo {
+        fill: $white;
+        display: block;
+        margin: 0 auto;
+      width: 80px;
+    }
+    
+    .path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 0;
+        &.circle {
+            -webkit-animation: dash 0.9s ease-in-out;
+            animation: dash 0.9s ease-in-out;
+        }
+        &.line {
+            stroke-dashoffset: 1000;
+            -webkit-animation: dash 0.9s 0.35s ease-in-out forwards;
+            animation: dash 0.9s 0.35s ease-in-out forwards;
+        }
+        &.check {
+            stroke-dashoffset: -100;
+            -webkit-animation: dash-check 0.9s 0.35s ease-in-out forwards;
+            animation: dash-check 0.9s 0.35s ease-in-out forwards;
+        }
+    }
+    
+    p {
+        text-align: center;
+        margin: 20px 0 60px;
+        font-size: 1.25em;
+        &.success {
+            color: #777;
+        }
+    }
+    
+    @-webkit-keyframes dash {
+        0% {
+            stroke-dashoffset: 1000;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    
+    @keyframes dash {
+        0% {
+            stroke-dashoffset: 1000;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    
+    @-webkit-keyframes dash-check {
+        0% {
+            stroke-dashoffset: -100;
+        }
+        100% {
+            stroke-dashoffset: 900;
+        }
+    }
+    
+    @keyframes dash-check {
+        0% {
+            stroke-dashoffset: -100;
+        }
+        100% {
+            stroke-dashoffset: 900;
+        }
+    }
+    /*--------------------
+    Buttons
+    --------------------*/
+    .button-cnt {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    button {
+        border: none;
+      position: absolute;
+      height: 64px;
+      z-index: 2;
+        top: 300px;
+        cursor: pointer;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 150ms ease;
+        outline: none !important;
+    }
+    
+    .primary-cta {
+          background: $bright_pink;
+            border-radius: 10px;
+          box-shadow: 0 10px 60px -10px $dull_pink;
+          color: white;
+            padding: 0 24px;
+            pointer-events: auto;
+          width: 250px;
+            z-index: 9;
+            transition: all 150ms ease;
+            will-change: transform, box-shadow, background;
+            &.hidden {
+                opacity: 0;
+                pointer-events: none;
+        }
+    }
+    
+    .secondary-cta {
+          background: $bright_pink;
+            border-radius: 10px;
+            padding: 0 24px;
+            pointer-events: auto;
+          width: 150px;
+            z-index: 9;
+            transition: all 150ms ease;
+            will-change: transform, box-shadow, background;
+            position: relative;
+            &--done {
+                background: transparent;
+                color: $bright_pink;
+            }
+            &--send {
+                border:1px solid $bright_pink;
+                box-shadow: 0 10px 60px -10px $dull_pink;
+                color: $white;
+            }
+            &.hidden {
+                opacity: 0;
+                pointer-events: none;
+        }
+    }
+    
+    
+    /*--------------------
+    Form
+    --------------------*/
+    .form {
+        fieldset {
+            border: none;
+            padding: 10px 0;
+    
+            label {
+                display: inline-block;
+                color: #444;
+                font-size: 12px;
+                padding: 4px;
+                margin: 5px;
+            }
+    
+            input {
+                background-color: $white;
+                width: 100%;
+                height: 38px;
+                color: #000;
+                padding: 8px;
+                border-radius: 5px;
+                font-size: 16px;
+                outline: none !important;
+                border: 1px solid hsla(0, 0, 0, 0.3);
+                position: absolute;
+                right: 24px;
+                box-shadow: inset 0 1px 4px hsla(0, 0, 0, 0.2);
+                &.input-card-info {
+                    display: inline-block;
+                    width: 300px;
+                    &--lg {
+                        height: 100px;
+                    }
+                }
+    
+            }
+            .select {
+                position: relative;
+                &::after {
+                    content: "";
+                    border-top: 8px solid #222;
+                    border-left: 4px solid transparent;
+                    border-right: 4px solid transparent;
+                    position: absolute;
+                    z-index: 2;
+                    top: 14px;
+                    right: 10px;
+                    pointer-events: none;
+                }
+                select {
+                    appearance: none;
+                    position: absolute;
+                    padding: 0;
+                    border: none;
+                    width: 100%;
+                    outline: none !important;
+                    top: 6px;
+                    left: 6px;
+                    background: none;
+                    :-moz-focusring {
+                        color: transparent;
+                        text-shadow: 0 0 0 #000;
+                    }
+                }
+            }
+        }
+    }
+    
+    /*--------------------
+    Credit Card
+    --------------------*/
+    .gift-card-box {
+        perspective: 1000;
+        width: 400px;
+        height: 280px;
+        position: absolute;
+        top: -112px;
+        left: 50%;
+        transform: translateX(-50%);
+    
+        .flip {
+            transform: rotateY(180deg);
+        }
+    
+        .front {
+            background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/341817/imitation_apple_design1.jpg');
+            background-size: contain;
+        }
+        
+        .front,
+        .back {
+            width: 400px;
+            height: 250px;
+            border-radius: 15px;
+            backface-visibility: hidden;
+            position: absolute;
+            color: #fff;
+            font-family: sans-serif;
+            top: 0;
+            left: 0;
+            box-shadow: 0 1px 6px hsla(0, 0, 0, 0.3);
+            &.back {
+                background: linear-gradient(269.85deg, #F23C2D 1.71%, #F8A80C 99.93%);
+            }
+        }
+    
+        .card-5 {
+            transition: 600ms;
+            transform-style: preserve-3d;
+            position: relative;
+            transition: all 1s ease-in-out;
+            &.whoosh {
+                animation: whooshAnimation 2400ms;
+            }
+        }
+    
+        @keyframes whooshAnimation {
+            0% {
+            }
+            50% {
+                transform: translateY(-150vh);
+            }
+            75% {
+                transform: translateX(150vw);
+            }
+            100% {
+            }
+        }
+    
+        .front-logo-cnt {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .font-logo {
+            width: 300px;
+        }
+    
+        .card-description {
+            font-family: sans-serif;
+            line-height: 1.4;
+            text-align: center;
+        }
+        .front {
+            z-index: 2;
+            transform: rotateY(0deg);
+        }
+        .back {
+            transform: rotateY(180deg);
+        }
+    }
+    #btn-card-flip:hover{
+          //  transform:perspective(7000px);
+        
+           // transform: translateZ(70px);
+             // transform: rotateZ(-45deg);
+               transform:translateY(2vh);
+    }
+  }

@@ -17,6 +17,8 @@ import { ShopComponent } from './shop/shop.component';
 import { CartComponent } from './cart/cart.component';
 import { OrdersComponent } from './orders/orders.component';
 import { ForumComponent } from './forum/forum.component';
+import { MapsComponent } from './maps/maps.component';
+import { ArtComponent } from './art/art.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ForumComponent } from './forum/forum.component';
     ShopComponent,
     CartComponent,
     OrdersComponent,
-    ForumComponent
+    ForumComponent,
+    MapsComponent,
+    ArtComponent
   ],
   imports: [
     BrowserModule,
