@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsComponent implements OnInit {
   Newsdata:any;
-   
+  now:any; 
 
-  constructor() { }
+  constructor() {
+    this.now = new Date().toJSON("yyyy/MM/dd HH:mm");
+    
+   }
 
   ngOnInit(): void {
   
@@ -17,7 +20,7 @@ export class NewsComponent implements OnInit {
     
   }
   getnewsdata(){
-    console.log("hello!");
+    //console.log("hello!");
     fetch('https://hn.algolia.com/api/v1/search_by_date?query=menstrual&tags=story')
     .then(response=>response.json())
     .then(data=>{this.setNewsData(data);})
@@ -25,8 +28,8 @@ export class NewsComponent implements OnInit {
   setNewsData(data:any){
      
     this.Newsdata = data; 
-    console.log(this.Newsdata); 
-    console.log(data);
+   // console.log(this.now); 
+   // console.log(data.hits[0].created_at);
   }
 
 }

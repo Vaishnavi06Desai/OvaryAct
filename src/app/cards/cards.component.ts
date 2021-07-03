@@ -12,6 +12,7 @@ export class CardsComponent implements OnInit {
   @Input() News_comments:string="";
   @Input() News_title:string="";
   @Input() News_Author:string="";
+  @Input() News_link:string="";
   @Input() disease_title:string="";
   @Input() disease_image:string="";
   @Input() disease_description:string="";

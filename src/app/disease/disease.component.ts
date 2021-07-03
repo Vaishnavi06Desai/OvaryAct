@@ -8,12 +8,16 @@ import { diseases } from '../JsonData/diseases';
 })
 export class DiseaseComponent implements OnInit {
   info:any;
+  
 
-  constructor() { }
+  constructor() {
+   
+   }
 
   ngOnInit(): void {
       this.info=diseases;
-      console.log(this.info);
+     // console.log(this.info);
+      //console.log(this.info);
     }
   }
 
