@@ -10,13 +10,19 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NewsComponent } from './news/news.component';
+import { DiseaseComponent } from './disease/disease.component';
+import { CardsComponent } from './cards/cards.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SigninComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    NewsComponent,
+    DiseaseComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,

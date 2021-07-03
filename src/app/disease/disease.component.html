@@ -1,0 +1,12 @@
+
+
+<div class="cont">
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;">
+        <div *ngFor="let x of info; let i=index">
+        <!-- {{x.toString()}} -->
+        <app-cards [type]="3" [id]="i" [disease_title]="x.name" [disease_description]="x.description" [disease_symptom1]="x.sy1" [disease_symptom2]="x.sy2" [disease_symptom3]="x.sy3" [disease_link]="x.link" [disease_image]="x.img"></app-cards>
+        <!-- <app-cards [type] = "1" [id] = "x" style = "background-color: blueviolet;"></app-component> -->
+    </div>
+    </div>
+    
+</div>
