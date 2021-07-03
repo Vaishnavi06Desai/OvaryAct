@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NewsComponent } from './news/news.component';
+import { DiseaseComponent } from './disease/disease.component';
+import { CardsComponent } from './cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { NewsComponent } from './news/news.component';
     SigninComponent,
     HomeComponent,
     NavbarComponent,
-    NewsComponent
+    NewsComponent,
+    DiseaseComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,97 @@
+<!-- <div class="cont"> -->
+    <div class="card" *ngIf = "type == 1">
+        <div class="sneaker">
+          <div class="circle"></div>
+          <img class="img1" src="../../assets/img/adidas.png" alt="adidas">
+        </div>
+        <div class="info">
+          <h1 class="title">Adidas ZX</h1>
+          <h3 class="description">FUTURE-READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.</h3>
+          <div class="sizes">
+            <button>39</button>
+            <button>40</button>
+            <button class="active">42</button>
+            <button>44</button>
+          </div>
+          <div class="purchase">
+            <button>Purchase</button>
+          </div>
+        </div>
+      </div>
+    
+    <!-- </div> -->
+    
+    
+    <div class="card-1" *ngIf="type == 2">
+      <div class="card-image"></div>
+      <div class="card-text">
+        <span class="date">4 days ago</span>
+        <h2>Post One</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi
+          dolor</p>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">read</div>
+        </div>
+        <div class="stat border">
+          <div class="value">5123</div>
+          <div class="type">views</div>
+        </div>
+        <div class="stat">
+          <div class="value">32</div>
+          <div class="type">comments</div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <a href="{{disease_link}}"><div class="card-1" *ngIf="type == 3">
+      <div class="card-image" [ngStyle]="{background: 'url(' + disease_image + ')','background-size':'100% 100%'}"></div>
+      <div class="card-text">
+       
+        <h2>{{disease_title}}</h2>
+        <p>{{disease_description}}</p>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          
+          <div class="type">{{disease_symptom1}}</div>
+        </div>
+        <div class="stat border">
+         
+          <div class="type">{{disease_symptom2}}</div>
+        </div>
+        <div class="stat">
+         
+          <div class="type">{{disease_symptom3}}</div>
+        </div>
+      </div>
+    </div></a>
+    
+    
+    
+    <div class="card-1" *ngIf="type == 4">
+      <div class="card-image"></div>
+      <div class="card-text">
+        <span class="date">4 days ago</span>
+        <h2>{{News_title}}</h2>
+        <p>{{News_Author}}</p>
+      </div>
+      <div class="card-stats">
+        <div class="stat">
+          <div class="value">4<sup>m</sup></div>
+          <div class="type">read</div>
+        </div>
+        <div class="stat border">
+          <div class="value">{{News_rating}}</div>
+          <div class="type">Rating</div>
+        </div>
+        <div class="stat">
+          <div class="value">{{News_comments}}</div>
+          <div class="type">comments</div>
+        </div>
+      </div>
+    </div>
