@@ -7,6 +7,9 @@ import { CardsComponent } from './cards/cards.component';
 import { NewsComponent } from './news/news.component';
 import { MapsComponent } from './maps/maps.component';
 import { ArtComponent } from './art/art.component';
+import { HowtopageComponent } from './howtopage/howtopage.component';
+import { AppointmentsComponent } from './appointments/appointments.component';
+
 const routes: Routes = [
   {
     path: "signin",
@@ -34,7 +37,13 @@ const routes: Routes = [
   },
   {
     path:"art",
-    component: ArtComponent
+    component: ArtComponent},
+   { path: "howto",
+    component: HowtopageComponent
+  },
+  {
+    path: "Appointments",
+    component: AppointmentsComponent
   }
 ];
 
