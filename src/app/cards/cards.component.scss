@@ -358,6 +358,21 @@
         width: 100%;
     }
     
+    .name{
+      // border: none;
+      // position: absolute;
+      // height: 64px;
+      // z-index: 2;
+      //   top: 300px;
+      //   cursor: pointer;
+      //   font-size: 18px;
+      //   text-align: center;
+      //   text-decoration: none;
+      //   transition: all 150ms ease;
+      //   outline: none !important;
+      margin: 10%;
+    }
+
     button {
         border: none;
       position: absolute;
@@ -502,8 +517,8 @@
         }
     
         .front {
-            background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/341817/imitation_apple_design1.jpg');
-            background-size: contain;
+            // background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/341817/imitation_apple_design1.jpg');
+            background-size: cover;
         }
         
         .front,
