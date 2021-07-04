@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
 
     this.as.getUserState().subscribe(user => {
-      if (!user){
+      if (user == null){
         this.user = "user"
       }
       else{
