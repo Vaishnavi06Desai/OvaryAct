@@ -25,6 +25,9 @@ export class CardsComponent implements OnInit {
   @Input() Gynac_phone:string="";
   @Input() Gynac_desc:string="";
 
+  @Input() Art_Name:string="";
+  @Input() Art_Img:string="";
+
   @Input() disease_title:string="";
   @Input() disease_image:string="";
   @Input() disease_description:string="";
