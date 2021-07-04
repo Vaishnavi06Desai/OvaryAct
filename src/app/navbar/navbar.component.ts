@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { navbar } from '../JsonData/navbar';
 import { AuthService } from '../services/auth.service';
 
@@ -16,6 +17,7 @@ export class NavbarComponent implements OnInit {
   navdata: any;
   user: string = "";
 
+  cart = faShoppingCart;
   ngOnInit(): void {
 
     this.as.getUserState().subscribe(user => {

@@ -44,7 +44,7 @@ export class CartComponent implements OnInit {
     "name": "Ovaryact",
     "order_id": "",
     "description": "",
-    "image": "https://firebasestorage.googleapis.com/v0/b/project-demo-c7787.appspot.com/o/Krishi%20Brahmand.png?alt=media&token=b66ef723-1ba1-4d3d-b61e-614ad0f04b33",
+    "image": "https://firebasestorage.googleapis.com/v0/b/ovaryact-883da.appspot.com/o/logo.png?alt=media&token=94c41630-000a-4467-9a29-4138f02eb2da",
     "prefill": {
       "name": "Test Name",
       "email": "Test email",
@@ -59,7 +59,7 @@ export class CartComponent implements OnInit {
   };
 
   public proceed() {
-    this.RAZORPAY_OPTIONS.amount = (this.total + 100) + '';
+    this.RAZORPAY_OPTIONS.amount = ((this.total + 100)*100) + '';
     this.RAZORPAY_OPTIONS['handler'] = this.razorPaySuccessHandler.bind(this);
 
     let razorpay = new Razorpay(this.RAZORPAY_OPTIONS)
