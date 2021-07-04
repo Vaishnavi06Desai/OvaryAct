@@ -43,7 +43,7 @@ export class NavbarComponent implements OnInit {
 
   logout(){
     return this.af.signOut().then(() => {
-      this.router.navigate(['/login']);
+      this.router.navigate(['/signin']);
     })
   }
   ngAfterViewInit(): void{
