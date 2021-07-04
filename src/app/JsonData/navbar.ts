@@ -7,7 +7,7 @@ export let navbar = [
     {
         "role":"user",
         "name":"Forums",
-        "link":"/home",
+        "link":"/forum",
     },
     {
         "role":"user",
