@@ -12,7 +12,7 @@ export let navbar = [
     {
         "role":"user",
         "name":"Blogs",
-        "link":"/newsandblog",
+        "link":"/updates",
     },
     {
         "role":"user",
@@ -31,8 +31,8 @@ export let navbar = [
     },
     {
         "role":"user",
-        "name":"Updates",
-        "link":"/updates",
+        "name":"Disorders",
+        "link":"/disorders",
     },
     {
         "role":"user",
