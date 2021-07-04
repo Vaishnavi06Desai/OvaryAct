@@ -3,7 +3,27 @@
         
     </div>
     <div class = "maincontent">
-        <div class = "products">
+        <div class = "table">
+            <div class = "row0" style = "display: flex; width: 100%; color: grey; justify-content: space-evenly;">
+                <div style="flex-basis: 20%;" class = "productitem"></div>
+                <div style="flex-basis: 30%;" class = "productitem">Name</div>
+                <div style="flex-basis: 20%;" class = "productitem">Sold By</div>
+                <div style="flex-basis: 20%;" class = "productitem">Price</div>
+                <div style="flex-basis: 10%;" class = "productitem">Quantity</div>
+            </div>
+            <div class = "cartcont">
+                <div class = "row1" *ngFor = "let x of items" style = "display: flex; width: 100%; justify-content: space-evenly;">
+                    <div style="flex-basis: 20%;" class = "productitem"></div>
+                    <div style="flex-basis: 30%;" class = "productitem">{{x.namee}}</div>
+                    <div style="flex-basis: 20%;" class = "productitem">{{x.soldby}}</div>
+                    <div style="flex-basis: 20%;" class = "productitem">{{x.price}}</div>
+                    <div style="flex-basis: 10%;" class = "productitem">{{x.quantity}}</div>
+                </div>
+            </div>
+            
+        </div>
+        <div class = "orderbill">
+            <div class = "bill"><button class = "custbutton"(click) = "proceed()">Checkout Now</button></div>
            
         </div>
     </div>
