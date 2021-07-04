@@ -30,6 +30,7 @@ import { ArtComponent } from './art/art.component';
 import { HowtopageComponent } from './howtopage/howtopage.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { PaymentComponent } from './payment/payment.component';
+import { GynoComponent } from './gyno/gyno.component';
 import { NewsandblogComponent } from './newsandblog/newsandblog.component';
 
 @NgModule({
@@ -52,6 +53,7 @@ import { NewsandblogComponent } from './newsandblog/newsandblog.component';
     PaymentComponent,
     HowtopageComponent,
     BlogsComponent,
+    GynoComponent,
     NewsandblogComponent
   ],
   imports: [
