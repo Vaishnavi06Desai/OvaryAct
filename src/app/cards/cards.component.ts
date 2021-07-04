@@ -14,6 +14,17 @@ export class CardsComponent implements OnInit {
   @Input() News_title:string="";
   @Input() News_Author:string="";
   @Input() News_link:string="";
+
+  @Input() NGO_Name:string="";
+  @Input() NGO_email:string="";
+  @Input() NGO_phone:string="";
+  @Input() NGO_desc:string="";
+
+  @Input() Gynac_Name:string="";
+  @Input() Gynac_email:string="";
+  @Input() Gynac_phone:string="";
+  @Input() Gynac_desc:string="";
+
   @Input() disease_title:string="";
   @Input() disease_image:string="";
   @Input() disease_description:string="";
@@ -34,10 +45,12 @@ export class CardsComponent implements OnInit {
  @Input() blog_Author:string="";
  @Input() blog_link:string="";
  @Input() blog_image:string="";
+
  @Input() gyno_name:string="";
  @Input() gyno_description:string="";
  @Input() gyno_image:string="";
  @Input() gyno_sp:string="";
+
 
   globalListenFunc: Function = () => { };
   globalListenFunc2: Function = () => { };
