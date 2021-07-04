@@ -25,6 +25,7 @@ import { ForumComponent } from './forum/forum.component';
 import { MapsComponent } from './maps/maps.component';
 import { ArtComponent } from './art/art.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { BlogsComponent } from './blogs/blogs.component';
     ForumComponent,
     MapsComponent,
     ArtComponent,
-    BlogsComponent
+    BlogsComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
