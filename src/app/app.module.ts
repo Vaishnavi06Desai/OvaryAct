@@ -17,16 +17,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NewsComponent } from './news/news.component';
 import { DiseaseComponent } from './disease/disease.component';
 import { CardsComponent } from './cards/cards.component';
-<<<<<<< HEAD
 import { NgosComponent } from './ngos/ngos.component';
-=======
 import { ShopComponent } from './shop/shop.component';
 import { CartComponent } from './cart/cart.component';
 import { OrdersComponent } from './orders/orders.component';
 import { ForumComponent } from './forum/forum.component';
 import { MapsComponent } from './maps/maps.component';
 import { ArtComponent } from './art/art.component';
->>>>>>> 73e42ec44c7f53ad90e289f6ec126d639f5402be
 
 @NgModule({
   declarations: [
@@ -37,16 +34,13 @@ import { ArtComponent } from './art/art.component';
     NewsComponent,
     DiseaseComponent,
     CardsComponent,
-<<<<<<< HEAD
-    NgosComponent
-=======
+    NgosComponent,
     ShopComponent,
     CartComponent,
     OrdersComponent,
     ForumComponent,
     MapsComponent,
     ArtComponent
->>>>>>> 73e42ec44c7f53ad90e289f6ec126d639f5402be
   ],
   imports: [
     BrowserModule,
