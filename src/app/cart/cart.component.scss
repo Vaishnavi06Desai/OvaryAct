@@ -4,8 +4,17 @@
     background: linear-gradient(90deg, #bab6f0, #c7e4ff  100%);
 }
 
+.main{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .maincontent{
     display: flex;
+}
+
+.table{
+    flex-basis: 60%;
+    padding: 2%;
 }
 
 .filter{
@@ -25,4 +34,12 @@
 
 .product{
     margin: 2% 0;
+}
+
+.productitem{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: black;
+    background-color: aqua;
 }

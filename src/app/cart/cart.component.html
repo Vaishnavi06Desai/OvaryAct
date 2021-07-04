@@ -3,6 +3,25 @@
         
     </div>
     <div class = "maincontent">
+        <div class = "table">
+            <div class = "row0" style = "display: flex; width: 100%; color: grey; justify-content: space-evenly;">
+                <div style="flex-basis: 20%;" class = "productitem"></div>
+                <div style="flex-basis: 30%;" class = "productitem">Name</div>
+                <div style="flex-basis: 20%;" class = "productitem">Sold By</div>
+                <div style="flex-basis: 20%;" class = "productitem">Price</div>
+                <div style="flex-basis: 10%;" class = "productitem">Quantity</div>
+            </div>
+            <div class = "cartcont">
+                <div class = "row" *ngFor = "let x of items" style = "display: flex; width: 100%; padding: 2%; border-color: silver; justify-content: space-evenly;">
+                    <div style="flex-basis: 20%;" class = "productitem"> </div>
+                    <div style="flex-basis: 30%;" class = "productitem">{{x.namee}}</div>
+                    <div style="flex-basis: 20%;" class = "productitem">{{x.soldby}}</div>
+                    <div style="flex-basis: 20%;" class = "productitem">{{x.price}}</div>
+                    <div style="flex-basis: 10%;" class = "productitem">{{x.quantity}}</div>
+                </div>
+            </div>
+            
+        </div>
         <div class = "products">
            
         </div>
