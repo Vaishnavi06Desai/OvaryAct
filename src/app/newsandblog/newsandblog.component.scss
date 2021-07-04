@@ -55,8 +55,11 @@
 
   .filter
   {
-    background-color: rgb(165, 44, 44);
+    // display: flex;
+    // flex-direction: column;
+    // background-color: rgb(165, 44, 44);
     flex-basis: 25%;
+
   }
 .starttop
 {
@@ -72,3 +75,25 @@
     font-size: 300%;
     line-height: 1.5;
 }
+.but
+{
+    margin: 3%;
+    height: 100%;
+    width: 30%;
+  //   background-color: aqua;
+    display:flex;
+    flex-direction: column;
+    // justify-content: space-evenly;
+}
+.clicks
+{
+  background-color: #aeceff3b;    ;
+  height: 40vh;
+  width: 20vw;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:#9370dc;   
+}
+

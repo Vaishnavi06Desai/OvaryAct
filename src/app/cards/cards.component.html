@@ -164,10 +164,10 @@
       <!--buttons parent-->
       <div class="button-cnt">
         <!--initial button-->
-        <button id="btn-card-flip" class="primary-cta">Customise</button>
+        <button id="btn-card-flip" class="primary-cta" style="background-color: #9370dc;">Customise</button>
         <!--the two buttons which appear once card is flipped-->
-        <button id="close" class="secondary-cta secondary-cta--done hidden">Close</button>
-        <button id="btn-card-send" class="secondary-cta secondary-cta--send hidden">Send</button>
+        <button id="close" class="secondary-cta secondary-cta--done hidden"style="background-color: #9370dc;">Close</button>
+        <button id="btn-card-send" class="secondary-cta secondary-cta--send hidden"style="background-color: #9370dc;">Send</button>
       </div>
     </div>
 
@@ -180,12 +180,12 @@
 <a href="{{blog_link}}" *ngIf="type == 6">
   <div class="card-1" >
     <div class="card-image" [ngStyle]="{background: 'url(' + blog_image + ')','background-size':'100% 100%'}"></div>
-    <div class="card-text">
+    <div class="card-text"style="color: #92b8ff">
       <span class="date">{{blog_date}}</span>
       <h2>{{blog_title}}</h2>
       <p>{{blog_Author}}</p>
     </div>
-    <div class="card-stats">
+    <div class="card-stats"style="background-color:#9370dc;">
       <div class="stat">
         <div class="value">4<sup>m</sup></div>
         <div class="type">read</div>
