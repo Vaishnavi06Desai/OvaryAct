@@ -98,3 +98,9 @@
   color:#9370dc;   
 }
 
+.clicks:hover{
+  transform: perspective(200px) translateZ(20px);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
