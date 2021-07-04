@@ -204,10 +204,10 @@
 
 <!--Contact-gyno card-->
 
-<div class="card-7">
-  <div class="contact-us " *ngIf="type == 7">
+<div class="card-7" *ngIf="type == 7">
+  <div class="contact-us " >
     <div class="title">
-      <h1>Contact Gyno:)</h1>
+      <h1>Contact A Gynacologist</h1>
     </div>
     <div class="form">
       <div class="form-items">
@@ -220,13 +220,13 @@
       </div>
       <div class="form-items">
         <textarea class="input message" cols="30" rows="10"
-          placeholder="Type your query her and we'll get back to you!"></textarea>
+          placeholder="Type your query here and we'll get back to you!"></textarea>
       </div>
     </div>
 
-    <div class="btn">
+    <div class="btn" (click) = "gynosubmitclicked()">
       Submit
-      <i class="fas fa-arrow-right"></i>
+      <!-- <i class="fas fa-arrow-right"></i> -->
     </div>
 
 
@@ -253,7 +253,7 @@
     <!-- <div class="team"> -->
       <div class="team_member">
         <div class="team_img">
-          <img src="../../assets/images/mapslogo.png" alt="Team_image">
+          <img style="width: 10vh; height: 10vh;" src="../../assets/images/docheart.jpg" alt="Team_image">
         </div>
         <!-- <h3>Paul Doe</h3> -->
         <p class="role">{{NGO_Name}}</p>
@@ -313,7 +313,7 @@
 </div>
 
 <!--Book an appointment-->
-<div class="card-10" *ngIf="type == 10">
+<div class="card-7" *ngIf="type == 10">
   <div class="contact-us " >
     <div class="title">
       <h1>Book an Appointment</h1>
@@ -337,9 +337,8 @@
       </div>
     </div>
 
-    <div class="btn">
+    <div class="btn" (click) = "gynosubmitclicked()">
       Submit
-      <i class="fas fa-arrow-right"></i>
     </div>
 
 

@@ -34,6 +34,8 @@ import { GynoComponent } from './gyno/gyno.component';
 import { NewsandblogComponent } from './newsandblog/newsandblog.component';
 import { GynacformComponent } from './gynacform/gynacform.component';
 import { CommunityComponent } from './community/community.component';
+import { DoctorsComponent } from './doctors/doctors.component';
+import { BookappointmentComponent } from './bookappointment/bookappointment.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import { CommunityComponent } from './community/community.component';
     GynoComponent,
     NewsandblogComponent,
     GynacformComponent,
-    CommunityComponent
+    CommunityComponent,
+    DoctorsComponent,
+    BookappointmentComponent
   ],
   imports: [
     BrowserModule,
