@@ -15,7 +15,7 @@ export class CartComponent implements OnInit {
   total: number = 0;
   ngOnInit(): void {
     this.as.getUserState().subscribe(user => {
-      if(!user) this.router.navigate(['/signin']);
+      if(user == null) this.router.navigate(['/signin']);
       this.getcart(user);
     })
   }
