@@ -12,7 +12,11 @@ import { AppointmentsComponent } from './appointments/appointments.component';
 import { ShopComponent } from './shop/shop.component';
 import { ForumComponent } from './forum/forum.component';
 import { CartComponent } from './cart/cart.component';
+import { NgosComponent } from './ngos/ngos.component';
 
+import { BlogsComponent } from './blogs/blogs.component';
+import { PaymentComponent } from './payment/payment.component';
+;
 const routes: Routes = [
   {
     path: "signin",
@@ -59,6 +63,18 @@ const routes: Routes = [
   {
     path: "cart",
     component: CartComponent
+  },
+  {
+    path: "ngos",
+    component: NgosComponent
+  },
+  {
+    path: "blogs",
+    component: BlogsComponent
+  },
+  {
+    path: "pay",
+    component: PaymentComponent
   }
 ];
 

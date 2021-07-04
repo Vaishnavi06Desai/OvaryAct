@@ -6,7 +6,7 @@ import { Component,Renderer2, OnInit ,Input} from '@angular/core';
   styleUrls: ['./cards.component.scss']
 })
 export class CardsComponent implements OnInit {
-  @Input() type: 1 | 2 | 3 | 4 | 5= 1;
+  @Input() type: 1 | 2 | 3 | 4 | 5| 6 | 7= 7;
   @Input() id: number = 0;
   @Input() News_rating:string="";
   @Input() News_comments:string="";
@@ -26,6 +26,11 @@ export class CardsComponent implements OnInit {
   @Input() prod_price: string="";
   @Input() prod_soldby: string="";
   
+ @Input() blog_title:string="";
+ @Input() blog_Author:string="";
+ @Input() blog_link:string="";
+ @Input() blog_image:string="";
+ @Input() blog_date:string="";
   globalListenFunc: Function = () => { };
   globalListenFunc2: Function = () => { };
   globalListenFunc3: Function = () => { };
