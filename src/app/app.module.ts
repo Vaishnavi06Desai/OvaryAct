@@ -24,6 +24,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { ForumComponent } from './forum/forum.component';
 import { MapsComponent } from './maps/maps.component';
 import { ArtComponent } from './art/art.component';
+import { BlogsComponent } from './blogs/blogs.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ArtComponent } from './art/art.component';
     OrdersComponent,
     ForumComponent,
     MapsComponent,
-    ArtComponent
+    ArtComponent,
+    BlogsComponent
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,7 @@ import { HowtopageComponent } from './howtopage/howtopage.component';
 import { AppointmentsComponent } from './appointments/appointments.component';
 import { ShopComponent } from './shop/shop.component';
 import { ForumComponent } from './forum/forum.component';
-
+import { BlogsComponent } from './blogs/blogs.component';
 const routes: Routes = [
   {
     path: "signin",
@@ -54,6 +54,10 @@ const routes: Routes = [
   {
     path: "forum",
     component: ForumComponent
+  },
+  {
+    path: "blogs",
+    component: BlogsComponent
   }
 ];
 
