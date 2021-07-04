@@ -16,6 +16,14 @@ export class NewsandblogComponent implements OnInit {
   ngOnInit(): void {
     this.getnewsdata();
   }
+
+  news(){
+     this.newsorblog = "news";
+  }
+
+  blogs(){
+    this.newsorblog = "blogs";
+  }
   getnewsdata(){
     //console.log("hello!");
     fetch('https://hn.algolia.com/api/v1/search_by_date?query=menstrual&tags=story')
