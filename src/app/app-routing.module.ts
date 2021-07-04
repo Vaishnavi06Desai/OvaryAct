@@ -17,6 +17,7 @@ import { NgosComponent } from './ngos/ngos.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { PaymentComponent } from './payment/payment.component';
 import { NewsandblogComponent } from './newsandblog/newsandblog.component';
+import { OrdersComponent } from './orders/orders.component';
 ;
 const routes: Routes = [
   {
@@ -80,6 +81,10 @@ const routes: Routes = [
   {
     path: "newsandblog",
     component: NewsandblogComponent
+  },
+  {
+    path: "orders",
+    component: OrdersComponent
   }
 ];
 
