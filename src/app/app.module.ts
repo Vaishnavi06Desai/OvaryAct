@@ -32,6 +32,10 @@ import { BlogsComponent } from './blogs/blogs.component';
 import { PaymentComponent } from './payment/payment.component';
 import { GynoComponent } from './gyno/gyno.component';
 import { NewsandblogComponent } from './newsandblog/newsandblog.component';
+import { GynacformComponent } from './gynacform/gynacform.component';
+import { CommunityComponent } from './community/community.component';
+import { DoctorsComponent } from './doctors/doctors.component';
+import { BookappointmentComponent } from './bookappointment/bookappointment.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +58,11 @@ import { NewsandblogComponent } from './newsandblog/newsandblog.component';
     HowtopageComponent,
     BlogsComponent,
     GynoComponent,
-    NewsandblogComponent
+    NewsandblogComponent,
+    GynacformComponent,
+    CommunityComponent,
+    DoctorsComponent,
+    BookappointmentComponent
   ],
   imports: [
     BrowserModule,

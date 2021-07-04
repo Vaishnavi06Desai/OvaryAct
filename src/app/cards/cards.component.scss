@@ -167,7 +167,7 @@
   
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background: rgb(255, 7, 110);
+    background: #7f7df9;
   }
   .card-stats .stat {
     display: flex;
@@ -216,8 +216,8 @@
   .card-51{
 
     $off_white:   #F8FAFF;
-    $bright_pink: #F4157E;
-    $dull_pink:   #CD106E;
+    $bright_pink: #a586e3;
+    $dull_pink:   #92b8ff;
     $white: #fff;
     
     *,
@@ -607,12 +607,12 @@
     font-family: 'Ubuntu', sans-serif;
   
   
-
-    background: #7f7df9;
+    width: 40vw;
+    // background: #7f7df9;
   
   
   .contact-us{
-    width: 250px;
+    width: 100%;
     background: #fff;
     padding: 50px;
     margin: 100px auto;
@@ -719,12 +719,12 @@
 .card-8{
 
     margin: 0;
-    padding: 0;
+    padding: 2%;
     box-sizing: border-box;
   
   
- 
-    background: #81c644;
+    width: 20vw;
+    background: rgb(250, 250, 250);
     font-family: 'Josefin Sans', sans-serif;
   
   
@@ -790,6 +790,12 @@
   
 }
 
+.card-8:hover{
+  transform: perspective(200px) translateZ(20px);
+  transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
 .card-9{
 
     background: #ddd3;
@@ -806,8 +812,8 @@
     max-width: 600px;
     padding: 4vh 0;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-top: 3px solid rgb(252, 103, 49);
-    border-bottom: 3px solid rgb(252, 103, 49);
+    border-top: 3px solid #7f7df9;
+    border-bottom: 3px solid #827ffe;
     border-left: none;
     border-right: none
 }
@@ -819,7 +825,7 @@
 }
 
 .title {
-    color: rgb(252, 103, 49);
+    color: #7f7df9;
     font-weight: 600;
     margin-bottom: 2vh;
     padding: 0 8%;
@@ -856,7 +862,7 @@
 
 .total {
     padding: 2vh 8%;
-    color: rgb(252, 103, 49);
+    color: #7f7df9;
     font-weight: bold
 }
 
@@ -876,7 +882,7 @@
 }
 
 .footer a {
-    color: rgb(252, 103, 49)
+    color: #7f7df9
 }
 
 .footer .col-10,
@@ -893,7 +899,7 @@
 #progressbar {
     margin-bottom: 3vh;
     overflow: hidden;
-    color: rgb(252, 103, 49);
+    color: #7f7df9;
     padding-left: 0px;
     margin-top: 3vh
 }
@@ -910,7 +916,7 @@
 
 #progressbar #step1:before {
     content: "";
-    color: rgb(252, 103, 49);
+    color: #7f7df9;
     width: 5px;
     height: 5px;
     margin-left: 0px !important
@@ -991,6 +997,6 @@
 
 #progressbar li.active:before,
 #progressbar li.active:after {
-    background: rgb(252, 103, 49)
+    background: #7f7df9
 }
 }

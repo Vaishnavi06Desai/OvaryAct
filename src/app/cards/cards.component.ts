@@ -1,4 +1,5 @@
 import { Component,Renderer2, OnInit ,Input, Output, EventEmitter} from '@angular/core';
+import { faArrowRight, faEnvelope, faUsers } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-cards',
@@ -7,7 +8,9 @@ import { Component,Renderer2, OnInit ,Input, Output, EventEmitter} from '@angula
 })
 export class CardsComponent implements OnInit {
   @Output() valueChange = new EventEmitter();
-  @Input() type: 1 | 2 | 3 | 4 | 5| 6 | 7|8|9|10= 10;
+  @Output() valueChange2 = new EventEmitter();
+
+  @Input() type: 1 | 2 | 3 | 4 | 5| 6 | 7 | 8 | 9 | 10 = 10;
   @Input() id: number = 0;
   @Input() News_rating:string="";
   @Input() News_comments:string="";
@@ -64,12 +67,21 @@ export class CardsComponent implements OnInit {
   card: any;
   rating: any = 4;
  
+
+  usericon = faUsers;
+  envelope = faEnvelope;
+  arrow = faArrowRight;
+
   constructor(private renderer: Renderer2) {
   }
 
 
   purchaseclicked(){
     this.valueChange.emit(this.prod_id);
+  }
+
+  gynosubmitclicked(){
+    this.valueChange2.emit("clicked");
   }
 
   ngAfterViewInit(): void{

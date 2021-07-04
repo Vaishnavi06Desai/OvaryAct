@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NewsandblogComponent implements OnInit {
   Newsdata:any;
   now:any; 
-
+  newsorblog: string = "news";
   constructor() { 
     this.now = new Date().toJSON("yyyy/MM/dd HH:mm");
   }

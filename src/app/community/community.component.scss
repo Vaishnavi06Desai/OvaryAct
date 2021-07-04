@@ -24,7 +24,7 @@
   .lstartcontent
   {
     margin-top: 10%;
-    margin-left:40%;
+    margin-left:30%;
     font-family:country;
     color:#9370dc;
     font-size: 300%;
@@ -44,4 +44,36 @@
     border: none;
     width: 60vw;
     font-size: 17px;
+  }
+  .but
+  {
+      margin: 3%;
+      height: 45vh;
+      width: 94%;
+    //   background-color: aqua;
+      display:flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+  .clicks
+  {
+    background-color: #aeceff3b;    ;
+    height: 100%;
+    width: 25vw;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#9370dc;   
+  }
+
+  .Ngoimg
+  {
+      margin: 6%;
+  }
+  .click h1
+  {
+    font-family:country;
+    color:#9370dc;
+
   }

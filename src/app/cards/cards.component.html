@@ -164,10 +164,10 @@
       <!--buttons parent-->
       <div class="button-cnt">
         <!--initial button-->
-        <button id="btn-card-flip" class="primary-cta">Customise</button>
+        <button id="btn-card-flip" class="primary-cta" style="background-color: #9370dc;">Customise</button>
         <!--the two buttons which appear once card is flipped-->
-        <button id="close" class="secondary-cta secondary-cta--done hidden">Close</button>
-        <button id="btn-card-send" class="secondary-cta secondary-cta--send hidden">Send</button>
+        <button id="close" class="secondary-cta secondary-cta--done hidden"style="background-color: #9370dc;">Close</button>
+        <button id="btn-card-send" class="secondary-cta secondary-cta--send hidden"style="background-color: #9370dc;">Send</button>
       </div>
     </div>
 
@@ -177,15 +177,15 @@
 
 
 <!--Blogs-->
-<a href="{{blog_link}}">
-  <div class="card-1" *ngIf="type == 6">
+<a href="{{blog_link}}" *ngIf="type == 6">
+  <div class="card-1" >
     <div class="card-image" [ngStyle]="{background: 'url(' + blog_image + ')','background-size':'100% 100%'}"></div>
-    <div class="card-text">
+    <div class="card-text"style="color: #92b8ff">
       <span class="date">{{blog_date}}</span>
       <h2>{{blog_title}}</h2>
       <p>{{blog_Author}}</p>
     </div>
-    <div class="card-stats">
+    <div class="card-stats"style="background-color:#9370dc;">
       <div class="stat">
         <div class="value">4<sup>m</sup></div>
         <div class="type">read</div>
@@ -204,10 +204,10 @@
 
 <!--Contact-gyno card-->
 
-<div class="card-7">
-  <div class="contact-us " *ngIf="type == 7">
+<div class="card-7" *ngIf="type == 7">
+  <div class="contact-us " >
     <div class="title">
-      <h1>Contact Gyno:)</h1>
+      <h1>Contact A Gynacologist</h1>
     </div>
     <div class="form">
       <div class="form-items">
@@ -220,13 +220,13 @@
       </div>
       <div class="form-items">
         <textarea class="input message" cols="30" rows="10"
-          placeholder="Type your query her and we'll get back to you!"></textarea>
+          placeholder="Type your query here and we'll get back to you!"></textarea>
       </div>
     </div>
 
-    <div class="btn">
+    <div class="btn" (click) = "gynosubmitclicked()">
       Submit
-      <i class="fas fa-arrow-right"></i>
+      <!-- <i class="fas fa-arrow-right"></i> -->
     </div>
 
 
@@ -253,7 +253,7 @@
     <!-- <div class="team"> -->
       <div class="team_member">
         <div class="team_img">
-          <img src="../../assets/images/mapslogo.png" alt="Team_image">
+          <img style="width: 10vh; height: 10vh;" src="../../assets/images/docheart.jpg" alt="Team_image">
         </div>
         <!-- <h3>Paul Doe</h3> -->
         <p class="role">{{NGO_Name}}</p>
@@ -272,24 +272,24 @@
     <div class="title">Purchase Reciept</div>
     <div class="info">
         <div class="row">
-            <div class="col-7"> <span id="heading">Date</span><br> <span id="details">10 October 2018</span> </div>
+            <div class="col-7"> <span id="heading">Date</span><br> <span id="details">4 July 2021</span> </div>
             <div class="col-5 pull-right"> <span id="heading">Order No.</span><br> <span id="details">012j1gvs356c</span> </div>
         </div>
     </div>
     <div class="pricing">
         <div class="row">
-            <div class="col-9"> <span id="name">BEATS Solo 3 Wireless Headphones</span> </div>
-            <div class="col-3"> <span id="price">£299.99</span> </div>
+            <div class="col-9"> <span id="name">Sanitary Napkins</span> </div>
+            <div class="col-3"> <span id="price">Rs 300</span> </div>
         </div>
         <div class="row">
             <div class="col-9"> <span id="name">Shipping</span> </div>
-            <div class="col-3"> <span id="price">£33.00</span> </div>
+            <div class="col-3"> <span id="price">Rs 100</span> </div>
         </div>
     </div>
     <div class="total">
         <div class="row">
             <div class="col-9"></div>
-            <div class="col-3"><big>£262.99</big></div>
+            <div class="col-3"><big>Rs 400</big></div>
         </div>
     </div>
     <div class="tracking">
@@ -313,7 +313,7 @@
 </div>
 
 <!--Book an appointment-->
-<div class="card-10"*ngIf="type == 10">
+<div class="card-7" *ngIf="type == 10">
   <div class="contact-us " >
     <div class="title">
       <h1>Book an Appointment</h1>
@@ -337,9 +337,8 @@
       </div>
     </div>
 
-    <div class="btn">
+    <div class="btn" (click) = "gynosubmitclicked()">
       Submit
-      <i class="fas fa-arrow-right"></i>
     </div>
 
 

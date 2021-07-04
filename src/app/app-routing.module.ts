@@ -17,6 +17,11 @@ import { NgosComponent } from './ngos/ngos.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { PaymentComponent } from './payment/payment.component';
 import { NewsandblogComponent } from './newsandblog/newsandblog.component';
+import { CommunityComponent } from './community/community.component';
+import { OrdersComponent } from './orders/orders.component';
+import { DoctorsComponent } from './doctors/doctors.component';
+import { GynacformComponent } from './gynacform/gynacform.component';
+import { BookappointmentComponent } from './bookappointment/bookappointment.component';
 ;
 const routes: Routes = [
   {
@@ -40,18 +45,20 @@ const routes: Routes = [
     component: CardsComponent
   },
   {
-    path:"map",
+    path: "map",
     component: MapsComponent
   },
   {
-    path:"art",
-    component: ArtComponent},
-   { path: "howto",
+    path: "art",
+    component: ArtComponent
+  },
+  {
+    path: "howto",
     component: HowtopageComponent
   },
   {
-    path: "Appointments",
-    component: AppointmentsComponent
+    path: "appointments",
+    component: DoctorsComponent
   },
   {
     path: "shop",
@@ -80,6 +87,22 @@ const routes: Routes = [
   {
     path: "newsandblog",
     component: NewsandblogComponent
+  },
+  {
+    path: "community",
+    component: CommunityComponent
+  },
+  {
+    path: "orders",
+    component: OrdersComponent
+  },
+  {
+    path: "gynacform",
+    component: GynacformComponent
+  },
+  {
+    path: "bookappointments",
+    component: BookappointmentComponent
   }
 ];
 

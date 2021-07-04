@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
-  selector: 'app-appointments',
-  templateUrl: './appointments.component.html',
-  styleUrls: ['./appointments.component.scss']
+  selector: 'app-doctors',
+  templateUrl: './doctors.component.html',
+  styleUrls: ['./doctors.component.scss']
 })
-export class AppointmentsComponent implements OnInit {
+export class DoctorsComponent implements OnInit {
 
   constructor(private db: AngularFirestore) {}
   gynac: any;
@@ -20,5 +20,4 @@ export class AppointmentsComponent implements OnInit {
   ngOnInit(): void {
     this.getgynacdata();
   }
-
 }
