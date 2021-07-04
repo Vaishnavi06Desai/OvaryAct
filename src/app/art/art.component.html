@@ -15,9 +15,9 @@
     <div class="middle">
         <div class="cont">
             <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;">
-                <div *ngFor="let x of [1 , 2 ,3, 4, 5, 6]">
+                <div *ngFor="let x of data; let i=index">
                 <!-- {{x.toString()}} -->
-                <app-cards [type]="5" [id]="i" ></app-cards>
+                <app-cards [type]="5" [id]="i" [Art_Name]="x.payload.doc.data().name" [Art_Img]="x.payload.doc.data().image"></app-cards>
                 <!-- <app-cards [type] = "1" [id] = "x" style = "background-color: blueviolet;"></app-component> -->
             </div>
             </div>
