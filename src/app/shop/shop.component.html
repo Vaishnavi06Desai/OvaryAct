@@ -1,3 +1,4 @@
+
 <div class = "main">
     <div class = "header">
         
@@ -7,8 +8,8 @@
 
         </div>
         <div class = "products">
-            <div class = "product" *ngFor = "let x of [1, 2, 3, 4, 5, 6]; let i = index">
-                <app-cards [type] = "1" [id] = "i"></app-cards>
+            <div class = "product" *ngFor = "let x of products; let i = index">
+                <app-cards (valueChange)='addtocart($event)' [type] = "1" [id] = "i" [prod_title] = "x.payload.doc.data().name" [prod_desc] = "x.payload.doc.data().description" [prod_soldby] = "x.payload.doc.data().soldby" [prod_price] = "x.payload.doc.data().price" [prod_rating] = "x.payload.doc.data().rating" [prod_id] = "x.payload.doc.id"></app-cards>
             </div>
         </div>
     </div>

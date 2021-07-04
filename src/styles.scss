@@ -1,11 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 html, body { height: 100%;}
-
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "~bootstrap/dist/css/bootstrap.css";
 body{
     margin: 0;
     padding: 0;
 }
 
+span.sr-only{
+    visibility: hidden;
+    display: none;
+}
 
 :root {
     --col1d: rgb(53,64,27);

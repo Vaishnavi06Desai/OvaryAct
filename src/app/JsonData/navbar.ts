@@ -1,0 +1,37 @@
+export let navbar = [
+    {
+        "role":"user",
+        "name":"Home",
+        "link":"/home",
+    },
+    {
+        "role":"user",
+        "name":"Forums",
+        "link":"/home",
+    },
+    {
+        "role":"user",
+        "name":"Blogs",
+        "link":"/home",
+    },
+    {
+        "role":"user",
+        "name":"Videos",
+        "link":"/home",
+    },
+    {
+        "role":"user",
+        "name":"Gallery",
+        "link":"/home",
+    },
+    {
+        "role":"user",
+        "name":"Shop",
+        "link":"/shop",
+    },
+    {
+        "role":"user",
+        "name":"Updates",
+        "link":"/home",
+    },
+]

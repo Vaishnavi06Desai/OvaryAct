@@ -3,6 +3,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { logindata, regdata } from '../JsonData/signin';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-signin',
@@ -11,12 +12,13 @@ import { logindata, regdata } from '../JsonData/signin';
 })
 export class SigninComponent implements OnInit {
 
-  constructor(private af: AngularFireAuth, private router: Router) { }
+  constructor(private as: AuthService, private router: Router) { }
 
   
   login: boolean = true;
   error: any;
 
+  selectedrole: any;
   signindata: any;
   signupdata: any;
 
@@ -26,12 +28,13 @@ export class SigninComponent implements OnInit {
 
   submit() {
     if(this.login){
-      this.af.signInWithEmailAndPassword(this.formlogin.get("email").value, this.formlogin.get("password").value).then(res => {
+      this.as.login(this.formlogin.value).then(res => {
         this.router.navigate(['/home']);
       })
     }
     else{
-      this.af.createUserWithEmailAndPassword(this.formreg.get("email").value, this.formreg.get("password").value).then(res => {
+      this.formreg.get("role").setValue(this.signupdata[5].value);
+      this.as.signup(this.formreg.value).then(res => {
         this.router.navigate(['/home']);
       })
     }
@@ -47,7 +50,7 @@ export class SigninComponent implements OnInit {
     email: new FormControl(''),
     phone: new FormControl(''),
     password: new FormControl(''),
-    role: new FormControl('farmer'),
+    role: new FormControl('user'),
     confirmpassword: new FormControl(''),
   })
   

@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { BrowserModule } from '@angular/platform-browser';
 import { environment } from 'src/environments/environment';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
+import { MatSelectModule } from '@angular/material/select';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +31,7 @@ import { HowtopageComponent } from './howtopage/howtopage.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { PaymentComponent } from './payment/payment.component';
 import { GynoComponent } from './gyno/gyno.component';
+import { NewsandblogComponent } from './newsandblog/newsandblog.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +53,8 @@ import { GynoComponent } from './gyno/gyno.component';
     PaymentComponent,
     HowtopageComponent,
     BlogsComponent,
-    GynoComponent
+    GynoComponent,
+    NewsandblogComponent
   ],
   imports: [
     BrowserModule,
@@ -61,6 +66,9 @@ import { GynoComponent } from './gyno/gyno.component';
     AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFirestoreModule,
+    MatSelectModule,
+    BrowserAnimationsModule,
+    NgbModule
     
   ],
   providers: [],
