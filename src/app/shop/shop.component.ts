@@ -16,7 +16,7 @@ export class ShopComponent implements OnInit {
   ngOnInit(): void {
     this.getproducts();
     this.as.getUserState().subscribe(user => {
-      if (!user) { this.user = null }
+      if (user == null) { this.user = null }
       else { this.user = user }
     })
   }
