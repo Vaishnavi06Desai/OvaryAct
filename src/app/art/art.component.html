@@ -1,11 +1,26 @@
-
-<div class="cont">
-    <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;">
-        <div *ngFor="let x of [1 , 2 ,3]">
-        <!-- {{x.toString()}} -->
-        <app-cards [type]="5" [id]="i" ></app-cards>
-        <!-- <app-cards [type] = "1" [id] = "x" style = "background-color: blueviolet;"></app-component> -->
+<div class = "main">
+    <div class="start">
+        <div class="starttop">
+            <div class="lstartcontent">
+                <p>Exibition</p>
+            </div>
+            <div class="startpic">
+                <img src="../../assets/images/art.png" height= "200">
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="SEARCH ART">
+        </div>
     </div>
+    <div class="middle">
+        <div class="cont">
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;">
+                <div *ngFor="let x of [1 , 2 ,3, 4, 5, 6]">
+                <!-- {{x.toString()}} -->
+                <app-cards [type]="5" [id]="i" ></app-cards>
+                <!-- <app-cards [type] = "1" [id] = "x" style = "background-color: blueviolet;"></app-component> -->
+            </div>
+            </div>
+        </div>
     </div>
-    
 </div>
