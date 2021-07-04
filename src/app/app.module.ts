@@ -30,6 +30,7 @@ import { ArtComponent } from './art/art.component';
 import { HowtopageComponent } from './howtopage/howtopage.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { PaymentComponent } from './payment/payment.component';
+import { NewsandblogComponent } from './newsandblog/newsandblog.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { PaymentComponent } from './payment/payment.component';
     BlogsComponent,
     PaymentComponent,
     HowtopageComponent,
-    BlogsComponent
+    BlogsComponent,
+    NewsandblogComponent
   ],
   imports: [
     BrowserModule,

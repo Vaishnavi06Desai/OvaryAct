@@ -16,6 +16,7 @@ import { NgosComponent } from './ngos/ngos.component';
 
 import { BlogsComponent } from './blogs/blogs.component';
 import { PaymentComponent } from './payment/payment.component';
+import { NewsandblogComponent } from './newsandblog/newsandblog.component';
 ;
 const routes: Routes = [
   {
@@ -75,6 +76,10 @@ const routes: Routes = [
   {
     path: "pay",
     component: PaymentComponent
+  },
+  {
+    path: "newsandblog",
+    component: NewsandblogComponent
   }
 ];
 
