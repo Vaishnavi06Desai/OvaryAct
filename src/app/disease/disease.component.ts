@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { diseases } from '../JsonData/diseases';
+import { AngularFirestore,AngularFirestoreCollection,AngularFirestoreDocument } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-disease',
@@ -8,9 +9,14 @@ import { diseases } from '../JsonData/diseases';
 })
 export class DiseaseComponent implements OnInit {
   info:any;
+  info1:any;
   
 
-  constructor() {
+  constructor(private db:AngularFirestore) {
+this.db.collection('Disease').snapshotChanges()
+.subscribe(res=>{this.info1=res});
+    //console.log(this.info1);
+    
    
    }
 

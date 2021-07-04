@@ -25,6 +25,7 @@ import { ForumComponent } from './forum/forum.component';
 import { MapsComponent } from './maps/maps.component';
 import { ArtComponent } from './art/art.component';
 import { HowtopageComponent } from './howtopage/howtopage.component';
+import { BlogsComponent } from './blogs/blogs.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { HowtopageComponent } from './howtopage/howtopage.component';
     ForumComponent,
     MapsComponent,
     ArtComponent,
-    HowtopageComponent
+    HowtopageComponent,
+    BlogsComponent
   ],
   imports: [
     BrowserModule,

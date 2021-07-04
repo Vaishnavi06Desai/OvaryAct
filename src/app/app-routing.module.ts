@@ -13,6 +13,7 @@ import { ShopComponent } from './shop/shop.component';
 import { ForumComponent } from './forum/forum.component';
 import { NgosComponent } from './ngos/ngos.component';
 
+import { BlogsComponent } from './blogs/blogs.component';
 const routes: Routes = [
   {
     path: "signin",
@@ -59,6 +60,10 @@ const routes: Routes = [
   {
     path: "ngos",
     component: NgosComponent
+  },
+  {
+    path: "blogs",
+    component: BlogsComponent
   }
 ];
 
