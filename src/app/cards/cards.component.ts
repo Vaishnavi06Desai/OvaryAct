@@ -6,6 +6,7 @@ import { Component,Renderer2, OnInit ,Input, Output, EventEmitter} from '@angula
   styleUrls: ['./cards.component.scss']
 })
 export class CardsComponent implements OnInit {
+  @Output() valueChange = new EventEmitter();
   @Input() type: 1 | 2 | 3 | 4 | 5| 6 | 7|8= 8;
   @Input() id: number = 0;
   @Input() News_rating:string="";
