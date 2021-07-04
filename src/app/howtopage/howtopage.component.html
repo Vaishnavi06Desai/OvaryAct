@@ -2,27 +2,27 @@
 <p>This is Ovaryact</p> -->
 <div class="main">
     <div class="start">
-        <div class="lstart">
-            <div class="lstarttop">
+            <div class="starttop">
                 <div class="lstartcontent">
-                    <!-- <h1>How<br>To....</h1> -->
-                    <p>How <br>to...</p>
+                    <p>How To...</p>
                 </div>
                 <div class="startpic">
-                    <img src="../../assets/images/Howtopagefront.png" >
+                    <img src="../../assets/images/Howtopagefront.png">
                 </div>
             </div>
             <div class="search">
                 <input type="text" placeholder="SEARCH">
             </div>
-        </div>
-        <div class="ytrec">
-            <!-- <p>because</p> -->
+    </div>
+        <!-- <div class="ytrec">
+            <p>because</p>
             <div class="ytrecround">
                 <div class="vidbox">
-                    <!-- <p>1</p> -->
-                    <!-- <iframe [src] = 'safeUrl' frameborder="0" allowfullscreen></iframe> -->
-                    <iframe [src]='safeUrl' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>1</p>
+                    <iframe [src] = 'safeUrl' frameborder="0" allowfullscreen></iframe>
+                    <iframe [src]='safeUrl' title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <div class="vidbox">
                     <p>2</p>
@@ -34,28 +34,40 @@
                     <p>4</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
+    
     <div class="middle">
-       
+
         <div class="quote">
             <p>
-                Hello this is quote
+                If there is one thing we can count on in menstruation and in life is that it is unprdictable
             </p>
         </div>
+
         <div class="concontainer">
-            <div class="containerr">
+            <div class="containerr" *ngFor="let x of videos; index as ndx">
                 <div class="vidandtext">
                     <div class="vid">
-                        <p>1</p>
+                        <!-- {{x.payload.doc.data().link}} -->
+                        <object style="width: 320; height: 240; float: none; clear: both; margin: 2px auto;"
+                            [data]='this.safeUrls[ndx]'>
+                            <!-- [data]='x.payload.doc.data().link'> -->
+                        </object>
+                        <!-- <p>1</p> -->
+                        <!-- <iframe [src]="this._sanitizer.bypassSecurityTrustResourceUrl(x.payload.doc.data().link)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <!-- <video width="320" height="240" controls> -->
+                        <!-- <source src={{x.payload.doc.data().link}}> -->
+                        <!-- <source src="https://www.youtube.com/watch?v=hmaKP8lpMpo"> -->
+                        <!-- </video> -->
+                        <!-- {{x.payload.doc.data().link}} -->
                     </div>
                     <div class="text">
-                        <h4>This is title 1</h4>
-                        <p>This is for the first.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                        <h4>{{x.payload.doc.data().title}}</h4>
+                        <p>{{x.payload.doc.data().description}} </p>
                     </div>
                 </div>
             </div>
-            <div class="containerr">
+            <!-- <div class="containerr">
                 <div class="vidandtext">
                     <div class="vid">
                         <p>2</p>
@@ -98,11 +110,11 @@
                         <p>This is for the fifth.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="quote">
             <p>
-                Hello this is another quote
+                The only thing required to become a woman is to identify as one
             </p>
         </div>
     </div>

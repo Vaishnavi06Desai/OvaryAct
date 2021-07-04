@@ -24,6 +24,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { ForumComponent } from './forum/forum.component';
 import { MapsComponent } from './maps/maps.component';
 import { ArtComponent } from './art/art.component';
+import { HowtopageComponent } from './howtopage/howtopage.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { PaymentComponent } from './payment/payment.component';
 
@@ -44,7 +45,9 @@ import { PaymentComponent } from './payment/payment.component';
     MapsComponent,
     ArtComponent,
     BlogsComponent,
-    PaymentComponent
+    PaymentComponent,
+    HowtopageComponent,
+    BlogsComponent
   ],
   imports: [
     BrowserModule,
