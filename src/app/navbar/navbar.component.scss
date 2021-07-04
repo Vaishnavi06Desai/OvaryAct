@@ -4,6 +4,7 @@
     position: fixed;
     top: 0;
     // background-color: aqua;
+    display: flex;
     z-index: 100;
     overflow: hidden;
     color: white;
@@ -32,7 +33,21 @@
     background-color: white;
     height: 6vh;
 }
+
+.logo{
+    flex-basis: 10%;
+}
+
+.welcome{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+}
 .options{
+    flex-basis: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -48,3 +63,34 @@
 .option{
     // background-color: aquamarine;
 }
+
+.nav-bar-item{
+    display: flex;
+    position: relative;
+    // background-color: var(--col5);
+    margin: 1vh 0;
+    padding: 0 0.5vw;
+    // border-radius: 10vh;
+    // color: white;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-bar-item:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-bar-item:hover:before {
+    visibility: visible;
+    width: 100%;
+  }

@@ -1,4 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { navbar } from '../JsonData/navbar';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,18 +9,32 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private as: AuthService) { }
 
   ifwhite: boolean = false;
   nav: any;
+  navdata: any;
+  user: string = "";
 
   ngOnInit(): void {
+
+    this.as.getUserState().subscribe(user => {
+      if (!user){
+        this.user = "user"
+      }
+      else{
+        this.as.getprofile(user.uid).subscribe((res: any) => {
+          this.user = res.payload.data().name;
+        })
+      }
+    })
     if (window.pageYOffset != 0) {
       this.ifwhite = true;
     }
     else{
       this.ifwhite = false;
     }
+    this.navdata = navbar;
   }
 
   ngAfterViewInit(): void{
@@ -43,8 +59,11 @@ export class NavbarComponent implements OnInit {
   @HostListener('window:scroll', ['$event']) // for window scroll events
   onScroll(event) {
     let nav = <HTMLElement>document.getElementsByClassName("main")[0];
+    let nav2 = <HTMLElement>document.getElementsByClassName("main")[0];
+    // let item = <HTMLElement>document.getElementsByClassName("")[0]
     nav.style.backgroundColor = `rgba(255, 255, 255, ${window.pageYOffset / 100})`
     nav.style.color = `rgb(${255 - (window.pageYOffset)}, ${255 - (window.pageYOffset)}, ${255 - (window.pageYOffset)})`
+
     // if (window.pageYOffset != 0) {
     //   this.ifwhite = true;
      

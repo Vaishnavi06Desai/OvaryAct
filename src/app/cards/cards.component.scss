@@ -579,3 +579,24 @@
                transform:translateY(2vh);
     }
   }
+
+  //rating
+  .star {
+    position: relative;
+    display: inline-block;
+    font-size: 150%;
+    color: #d3d3d3;
+  }
+  
+  .full {
+    //color: var(--col2vl);
+    //color: var(--col4);
+    color: rgb(255, 215, 0);
+  }
+  .half {
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    //color: var(--col4);
+    color: rgb(255, 215, 0);
+  }
