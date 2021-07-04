@@ -13,8 +13,9 @@ export class DiseaseComponent implements OnInit {
   
 
   constructor(private db:AngularFirestore) {
-    this.info1=this.afs.collection('Disease').valueChanges();
-    console.log(this.info1);
+this.db.collection('Disease').snapshotChanges()
+.subscribe(res=>{this.info1=res});
+    //console.log(this.info1);
     
    
    }
