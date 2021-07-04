@@ -12,16 +12,17 @@
   <div class="info">
     <h1 class="title">{{prod_title}}</h1>
     <h3 class="description" style="color: gray;">Sold by: {{prod_soldby}}</h3>
-    <ngb-rating [rate]="rating" [readonly]="true" [max]="5" [starTemplate]="t"></ngb-rating>
+    
     <h3 class="description2">{{prod_desc}}</h3>
     <div class="sizes">
       <button>{{prod_price}}</button>
+      <ngb-rating [rate]="prod_rating" [readonly]="true" [max]="5" [starTemplate]="t"></ngb-rating>
       <!-- <button>40</button>
             <button class="active">42</button>
             <button>44</button> -->
     </div>
     <div class="purchase">
-      <button>Purchase</button>
+      <button (click) = "purchaseclicked()">Purchase</button>
     </div>
   </div>
 </div>

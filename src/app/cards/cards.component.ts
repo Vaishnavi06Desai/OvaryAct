@@ -1,4 +1,4 @@
-import { Component,Renderer2, OnInit ,Input} from '@angular/core';
+import { Component,Renderer2, OnInit ,Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-cards',
@@ -6,6 +6,9 @@ import { Component,Renderer2, OnInit ,Input} from '@angular/core';
   styleUrls: ['./cards.component.scss']
 })
 export class CardsComponent implements OnInit {
+
+  @Output() valueChange = new EventEmitter();
+
   @Input() type: 1 | 2 | 3 | 4 | 5| 6 | 7= 7;
   @Input() id: number = 0;
   @Input() News_rating:string="";
@@ -25,7 +28,9 @@ export class CardsComponent implements OnInit {
   @Input() prod_desc: string="";
   @Input() prod_price: string="";
   @Input() prod_soldby: string="";
-  
+  @Input() prod_id: string="";
+  @Input() prod_rating: string="";
+
  @Input() blog_title:string="";
  @Input() blog_Author:string="";
  @Input() blog_link:string="";
@@ -46,6 +51,9 @@ export class CardsComponent implements OnInit {
   }
 
 
+  purchaseclicked(){
+    this.valueChange.emit(this.prod_id);
+  }
 
   ngAfterViewInit(): void{
 
@@ -89,8 +97,8 @@ export class CardsComponent implements OnInit {
       this.sneaker.style.transform = "perspective(700px) translateZ(70px) rotateZ(-45deg) translateY(-50px)";
       this.description.style.transform = "perspective(700px) translateZ(75px)";
       this.description2.style.transform = "perspective(700px) translateZ(75px)";
-      this.sizes.style.transform = "perspective(700px) translateZ(50px)";
-      this.purchase.style.transform = "perspective(700px) translateZ(35px)";
+      // this.sizes.style.transform = "perspective(700px) translateZ(50px)";
+      // this.purchase.style.transform = "perspective(700px) translateZ(35px)";
     });
     // this.container?.addEventListener("mouseenter", (e) => {
     //   this.card.style.transition = "none";
