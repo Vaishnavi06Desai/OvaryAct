@@ -7,7 +7,7 @@ import { Component,Renderer2, OnInit ,Input, Output, EventEmitter} from '@angula
 })
 export class CardsComponent implements OnInit {
   @Output() valueChange = new EventEmitter();
-  @Input() type: 1 | 2 | 3 | 4 | 5| 6 | 7|8|9= 9;
+  @Input() type: 1 | 2 | 3 | 4 | 5| 6 | 7|8|9|10= 10;
   @Input() id: number = 0;
   @Input() News_rating:string="";
   @Input() News_comments:string="";
