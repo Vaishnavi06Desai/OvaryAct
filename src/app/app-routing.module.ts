@@ -37,7 +37,7 @@ const routes: Routes = [
     component: NewsComponent
   },
   {
-    path: "disease",
+    path: "disorders",
     component: DiseaseComponent
   },
   {
