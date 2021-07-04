@@ -7,7 +7,7 @@
 <div class="card" *ngIf="type == 1">
   <div class="sneaker">
     <div class="circle"></div>
-    <img class="img1" src="../../assets/images/adidas.png" alt="adidas">
+    <img class="img1" src="{{prod_img}}" alt="adidas">
   </div>
   <div class="info">
     <h1 class="title">{{prod_title}}</h1>
@@ -15,7 +15,7 @@
     
     <h3 class="description2">{{prod_desc}}</h3>
     <div class="sizes">
-      <button>{{prod_price}}</button>
+      <button>Rs {{prod_price}}</button>
       <ngb-rating [rate]="prod_rating" [readonly]="true" [max]="5" [starTemplate]="t"></ngb-rating>
       <!-- <button>40</button>
             <button class="active">42</button>

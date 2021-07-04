@@ -28,6 +28,7 @@ export class CardsComponent implements OnInit {
   @Input() prod_soldby: string="";
   @Input() prod_id: string="";
   @Input() prod_rating: string="";
+  @Input() prod_img: string="";
 
  @Input() blog_title:string="";
  @Input() blog_Author:string="";

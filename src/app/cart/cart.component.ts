@@ -18,6 +18,8 @@ export class CartComponent implements OnInit {
   showModal = false;
     items: any;
   total: number = 0;
+  subtotal: number = 100;
+  shipping: number = 100;
   ngOnInit(): void {
 
     this.as.getUserState().subscribe(user => {
@@ -57,7 +59,7 @@ export class CartComponent implements OnInit {
   };
 
   public proceed() {
-    this.RAZORPAY_OPTIONS.amount = (this.total * 100) + '';
+    this.RAZORPAY_OPTIONS.amount = (this.total + 100) + '';
     this.RAZORPAY_OPTIONS['handler'] = this.razorPaySuccessHandler.bind(this);
 
     let razorpay = new Razorpay(this.RAZORPAY_OPTIONS)
@@ -83,10 +85,12 @@ export class CartComponent implements OnInit {
       for(let x of this.items){
         this.db.collection("Products").doc(x.payload.doc.data().productid).snapshotChanges().subscribe((res: any) => {
           x["quantity"] = x.payload.doc.data().quantity;
+          x["img"] = res.payload.data().img;
           x["namee"] = res.payload.data().name;
           x["soldby"] = res.payload.data().soldby;
           x["price"] = res.payload.data().price;
           this.total += x["price"]
+          this.subtotal += this.total;
         })
       }
       console.log(this.items)
