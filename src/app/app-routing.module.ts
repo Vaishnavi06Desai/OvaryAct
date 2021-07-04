@@ -11,6 +11,7 @@ import { HowtopageComponent } from './howtopage/howtopage.component';
 import { AppointmentsComponent } from './appointments/appointments.component';
 import { ShopComponent } from './shop/shop.component';
 import { ForumComponent } from './forum/forum.component';
+import { NgosComponent } from './ngos/ngos.component';
 
 const routes: Routes = [
   {
@@ -54,6 +55,10 @@ const routes: Routes = [
   {
     path: "forum",
     component: ForumComponent
+  },
+  {
+    path: "ngos",
+    component: NgosComponent
   }
 ];
 
