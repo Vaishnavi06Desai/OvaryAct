@@ -20,6 +20,12 @@ export class CardsComponent implements OnInit {
   @Input() disease_symptom1:string="";
   @Input() disease_symptom2:string="";
   @Input() disease_symptom3:string="";
+
+  @Input() prod_title: string="";
+  @Input() prod_desc: string="";
+  @Input() prod_price: string="";
+  @Input() prod_soldby: string="";
+  
  @Input() blog_title:string="";
  @Input() blog_Author:string="";
  @Input() blog_link:string="";
@@ -32,8 +38,10 @@ export class CardsComponent implements OnInit {
   sneaker: any;
   purchase: any;
   description: any;
+  description2: any;
   sizes: any;
   card: any;
+  rating: any = 4;
   constructor(private renderer: Renderer2) {
   }
 
@@ -51,6 +59,7 @@ export class CardsComponent implements OnInit {
     this.sneaker = <HTMLElement>document.getElementsByClassName("img1")[this.id];
     this.purchase = <HTMLElement>document.getElementsByClassName("purchase")[this.id];
     this.description = <HTMLElement>document.getElementsByClassName("description")[this.id];
+    this.description2 = <HTMLElement>document.getElementsByClassName("description2")[this.id];
     this.sizes = <HTMLElement>document.getElementsByClassName("sizes")[this.id];
 
     this.globalListenFunc = this.renderer.listen(this.card, 'mousemove', e => {
@@ -79,6 +88,7 @@ export class CardsComponent implements OnInit {
       this.title.style.transform = "perspective(700px) translateZ(75px)";
       this.sneaker.style.transform = "perspective(700px) translateZ(70px) rotateZ(-45deg) translateY(-50px)";
       this.description.style.transform = "perspective(700px) translateZ(75px)";
+      this.description2.style.transform = "perspective(700px) translateZ(75px)";
       this.sizes.style.transform = "perspective(700px) translateZ(50px)";
       this.purchase.style.transform = "perspective(700px) translateZ(35px)";
     });

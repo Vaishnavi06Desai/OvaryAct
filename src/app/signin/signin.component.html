@@ -1,9 +1,9 @@
 <div class="main">
-    <div class = "titlewebsite">
-        <div class = "titleweb">
+    <div class="titlewebsite">
+        <div class="titleweb">
             OvaryAct
         </div>
-        <div class = "tagline">
+        <div class="tagline">
             A safe space for mentrual health and hygeine
         </div>
     </div>
@@ -87,6 +87,7 @@
                     <form [formGroup]="formreg" class="input">
                         <div class="regdiv">
                             <div *ngFor="let x of signupdata" style="height: 20%;">
+                                <div *ngIf="x.type != 'dropdown'">
                                     <input placeholder="{{x.placeholder}}" formControlName={{x.formname}}
                                         type={{x.type}} class="ip" *ngIf=!x.error>
                                     <div *ngIf=x.error class="errormsg">
@@ -96,9 +97,20 @@
                                         <input placeholder=x.placeholder formControlName={{x.formname}} type={{x.type}}
                                             class="ip iperror">
                                     </div>
+                                </div>
+                                <div *ngIf="x.type == 'dropdown'">
+                                    <mat-form-field>
+                                        <mat-label style="font-size: 100%;">{{x.placeholder}}</mat-label>
+                                        <mat-select [(value)]="x.value" class="ip"
+                                            style="font-size: 100%; border-bottom: none;">
 
-                            </div>
-                            <div>
+                                            <div *ngFor="let y of x.options">
+                                                <mat-option value="{{y.value}}" class="options">
+                                                    {{y.placeholder}}</mat-option>
+                                            </div>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
                             </div>
                         </div>
                     </form>

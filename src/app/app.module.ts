@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { BrowserModule } from '@angular/platform-browser';
 import { environment } from 'src/environments/environment';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
+import { MatSelectModule } from '@angular/material/select';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +29,7 @@ import { MapsComponent } from './maps/maps.component';
 import { ArtComponent } from './art/art.component';
 import { HowtopageComponent } from './howtopage/howtopage.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +47,8 @@ import { BlogsComponent } from './blogs/blogs.component';
     ForumComponent,
     MapsComponent,
     ArtComponent,
+    BlogsComponent,
+    PaymentComponent,
     HowtopageComponent,
     BlogsComponent
   ],
@@ -56,6 +62,9 @@ import { BlogsComponent } from './blogs/blogs.component';
     AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFirestoreModule,
+    MatSelectModule,
+    BrowserAnimationsModule,
+    NgbModule
     
   ],
   providers: [],
