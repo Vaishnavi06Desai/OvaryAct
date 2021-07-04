@@ -18,6 +18,7 @@ import { BlogsComponent } from './blogs/blogs.component';
 import { PaymentComponent } from './payment/payment.component';
 import { NewsandblogComponent } from './newsandblog/newsandblog.component';
 import { CommunityComponent } from './community/community.component';
+import { OrdersComponent } from './orders/orders.component';
 ;
 const routes: Routes = [
   {
@@ -85,6 +86,10 @@ const routes: Routes = [
   {
     path: "community",
     component: CommunityComponent
+  },
+  {
+    path: "orders",
+    component: OrdersComponent
   }
 ];
 

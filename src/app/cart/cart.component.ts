@@ -70,7 +70,7 @@ export class CartComponent implements OnInit {
     console.log(response);
     this.razorpayResponse = `Successful Transaction`;
     console.log(this.razorpayResponse);
-  
+    this.router.navigate(['/home']);
 
     this.zone.run(() => {
       this.router.navigateByUrl("/orders");
