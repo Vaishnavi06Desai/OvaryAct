@@ -4,11 +4,11 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/Vaishnavi06Desai/OvaryAct?color=%00b3b3&style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/Vaishnavi06Desai/OvaryAct?color=%23ff69b4&style=for-the-badge)
 
-Video:
+## Video
 [![Ovaryact](https://img.youtube.com/vi/CUsbxoXYFGk/0.jpg)](http://www.youtube.com/watch?v=CUsbxoXYFGk)
 
-<br>
-[Live Link](https://ovaryact-883da.web.app/home](https://ovaryact-883da.web.app/home)
+
+[Live-Link](https://ovaryact-883da.web.app/home)
 
 ## Inspiration
 **A safe space for mensural health and hygiene.**
