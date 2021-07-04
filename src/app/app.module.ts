@@ -33,6 +33,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { GynoComponent } from './gyno/gyno.component';
 import { NewsandblogComponent } from './newsandblog/newsandblog.component';
 import { GynacformComponent } from './gynacform/gynacform.component';
+import { CommunityComponent } from './community/community.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { GynacformComponent } from './gynacform/gynacform.component';
     BlogsComponent,
     GynoComponent,
     NewsandblogComponent,
-    GynacformComponent
+    GynacformComponent,
+    CommunityComponent
   ],
   imports: [
     BrowserModule,
