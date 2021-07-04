@@ -1,4 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { Router } from '@angular/router';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { navbar } from '../JsonData/navbar';
 import { AuthService } from '../services/auth.service';
@@ -10,7 +12,7 @@ import { AuthService } from '../services/auth.service';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private as: AuthService) { }
+  constructor(private as: AuthService, private af: AngularFireAuth, private router: Router) { }
 
   ifwhite: boolean = false;
   nav: any;
@@ -39,6 +41,11 @@ export class NavbarComponent implements OnInit {
     this.navdata = navbar;
   }
 
+  logout(){
+    return this.af.signOut().then(() => {
+      this.router.navigate(['/login']);
+    })
+  }
   ngAfterViewInit(): void{
 
       
