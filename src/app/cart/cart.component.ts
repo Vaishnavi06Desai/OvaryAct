@@ -12,6 +12,7 @@ export class CartComponent implements OnInit {
 
   constructor(private as: AuthService, private router: Router, private db: AngularFirestore) { }
   items: any;
+  total: number = 0;
   ngOnInit(): void {
     this.as.getUserState().subscribe(user => {
       if(!user) this.router.navigate(['/login']);
@@ -28,6 +29,7 @@ export class CartComponent implements OnInit {
           x["namee"] = res.payload.data().name;
           x["soldby"] = res.payload.data().soldby;
           x["price"] = res.payload.data().price;
+          this.total += x["price"]
         })
       }
       console.log(this.items)

@@ -12,8 +12,8 @@
                 <div style="flex-basis: 10%;" class = "productitem">Quantity</div>
             </div>
             <div class = "cartcont">
-                <div class = "row" *ngFor = "let x of items" style = "display: flex; width: 100%; padding: 2%; border-color: silver; justify-content: space-evenly;">
-                    <div style="flex-basis: 20%;" class = "productitem"> </div>
+                <div class = "row1" *ngFor = "let x of items" style = "display: flex; width: 100%; justify-content: space-evenly;">
+                    <div style="flex-basis: 20%;" class = "productitem"></div>
                     <div style="flex-basis: 30%;" class = "productitem">{{x.namee}}</div>
                     <div style="flex-basis: 20%;" class = "productitem">{{x.soldby}}</div>
                     <div style="flex-basis: 20%;" class = "productitem">{{x.price}}</div>
@@ -22,7 +22,8 @@
             </div>
             
         </div>
-        <div class = "products">
+        <div class = "orderbill">
+            <div class = "bill"><button class = "custbutton">Checkout Now</button></div>
            
         </div>
     </div>

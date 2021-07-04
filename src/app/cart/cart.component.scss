@@ -15,8 +15,12 @@
 .table{
     flex-basis: 60%;
     padding: 2%;
+    width: 100%;
 }
 
+.orderbill{
+    flex-basis: 40%;
+}
 .filter{
     width: 20vw;
     height: 50vh;
@@ -41,5 +45,13 @@
     justify-content: center;
     text-align: center;
     border: black;
-    background-color: aqua;
+}
+
+.row1{
+    padding: 0 2%;
+    // border-top: solid silver thin;
+    // border-bottom: solid silver thin;
+    background-color: rgb(250, 250, 250);
+    height: 10vh;
+    align-items: center;
 }
