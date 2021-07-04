@@ -57,7 +57,7 @@ const routes: Routes = [
     component: HowtopageComponent
   },
   {
-    path: "appointments",
+    path: "doctors",
     component: DoctorsComponent
   },
   {
@@ -85,7 +85,7 @@ const routes: Routes = [
     component: PaymentComponent
   },
   {
-    path: "newsandblog",
+    path: "updates",
     component: NewsandblogComponent
   },
   {

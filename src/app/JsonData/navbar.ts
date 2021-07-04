@@ -17,12 +17,12 @@ export let navbar = [
     {
         "role":"user",
         "name":"Videos",
-        "link":"/home",
+        "link":"/howto",
     },
     {
         "role":"user",
         "name":"Gallery",
-        "link":"/home",
+        "link":"/art",
     },
     {
         "role":"user",
@@ -32,11 +32,11 @@ export let navbar = [
     {
         "role":"user",
         "name":"Updates",
-        "link":"/home",
+        "link":"/updates",
     },
     {
         "role":"user",
         "name":"Community",
-        "link":"/home",
+        "link":"/community",
     },
 ]
